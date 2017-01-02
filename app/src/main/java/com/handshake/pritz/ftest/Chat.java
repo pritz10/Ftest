@@ -4,7 +4,7 @@ package com.handshake.pritz.ftest;
  * Created by pritz on 1/1/17.
  */
 
-public final class Chat {
+public class Chat {
     String name,mess;
     public Chat()
     {

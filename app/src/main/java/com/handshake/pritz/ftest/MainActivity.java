@@ -19,9 +19,12 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 
+import static android.R.attr.name;
 import static android.R.id.message;
 
 public class MainActivity extends AppCompatActivity {
@@ -38,15 +41,28 @@ public class MainActivity extends AppCompatActivity {
         send = (Button) findViewById(R.id.send);
         list = (ListView) findViewById(R.id.list);
         // Write a message to the database
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        final DatabaseReference myRef = database.getReference("name");
+       final FirebaseDatabase database = FirebaseDatabase.getInstance();
+       final DatabaseReference myRef = database.getReference("name");
 
 
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Chat chat = new Chat("Pritam", mes.getText().toString());
-                myRef.setValue(chat);
+
+                Map<String,Object> values = new HashMap<>();
+
+
+
+                values.put("name", "puf");
+
+                values.put("message", message);
+
+                Chat chat = new Chat("Robin", mes.getText().toString());
+
+                myRef.push().setValue(chat);
+
+
+
                 mes.setText("");
 
             }
@@ -67,6 +83,10 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         list.setAdapter(adapter);
+
+
+
+
         myRef.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
