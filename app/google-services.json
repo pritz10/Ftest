@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "666274332288",
+    "firebase_url": "https://pritz-7dbc2.firebaseio.com",
+    "project_id": "pritz-7dbc2",
+    "storage_bucket": "pritz-7dbc2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:666274332288:android:fcd72ccb3d28cd25",
+        "android_client_info": {
+          "package_name": "com.handshake.pritz.ftest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "666274332288-a1d9j51qdev0qqav3r80k8774i620jn9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.handshake.pritz.ftest",
+            "certificate_hash": "8FE7CD0944176251BACDD3DEC60606FC4B179AD0"
+          }
+        },
+        {
+          "client_id": "666274332288-offs7nibfavdm9afsgo94958uenf4mi2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnjfO38Rl3EgiOmsTAAgR4k4ZNG9qjl3w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "666274332288-offs7nibfavdm9afsgo94958uenf4mi2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
