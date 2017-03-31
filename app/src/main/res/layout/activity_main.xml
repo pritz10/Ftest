@@ -19,7 +19,8 @@
         android:layout_toLeftOf="@+id/send"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:hint="Enter Message" />
+        android:hint="Enter Message"
+        android:visibility="gone"/>
 
     <Button
         android:text="Button"
@@ -28,14 +29,15 @@
         android:id="@+id/send"
         android:layout_alignTop="@+id/mes"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        />
 
     <ListView
+        android:id="@+id/list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@+id/mes"
+        android:layout_height="wrap_content"
         android:textAlignment="gravity"
-        android:id="@+id/list" />
+
+        android:layout_toStartOf="@+id/send" />
 
 </RelativeLayout>
